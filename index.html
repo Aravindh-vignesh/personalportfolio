@@ -467,7 +467,7 @@
         </div>
     </nav>
 
-   <section id="home" style="padding: 20px; background-color: #fdf9c4;">
+   <section id="Home" style="padding: 20px; background-color: #fdf9c4;">
     <div class="hero" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
         <div class="hero-text" style="margin-bottom: 20px;">
             <h1 class="typing-clean" style="font-size: 2em; margin-bottom: 10px;">Hi, I'm <span style="color: #007BFF;">Vignesh Aravindh</span></h1>
@@ -483,7 +483,7 @@
         </div>
     </div>
 </section>
-<section id="about" style="padding: 80px 20px; background-color: #fdf9c4; box-sizing: border-box;">
+<section id="About" style="padding: 80px 20px; background-color: #fdf9c4; box-sizing: border-box;">
   <h2 style="font-size: 36px; font-weight: 700; color: #00008B; text-align: center; margin-bottom: 50px; font-family: 'Poppins', sans-serif;">
     About Me
   </h2>
@@ -504,19 +504,35 @@
         if (index < text.length) {
           element.innerHTML += text.charAt(index);
           index++;
-          setTimeout(typeChar, 50); // typing speed
+          setTimeout(typeChar, 90); // typing speed
         }
       }
   
       typeChar();
     </script>
   
-    <p style="font-weight: 600; font-size: 17px; margin-top: 20px;">
-      ✨ I strongly believe in the power of <em style="font-style: normal; font-weight: bold;">creativity</em>, 
-      <em style="font-style: normal; font-weight: bold;">collaboration</em>, and 
-      <em style="font-style: normal; font-weight: bold;">continuous learning</em>.
-      Whether building interactive frontends or solving complex backend problems, I am always eager to contribute and make an impact.
-    </p>
+ <p id="typedParagraph" style="font-weight: 600; font-size: 17px; margin-top: 20px;">
+  ✨ I strongly believe in the power of creativity,
+  <em style="font-style: normal; font-weight: bold;">collaboration</em>, and
+  <em style="font-style: normal; font-weight: bold;">continuous learning</em>.
+  Whether building interactive frontends or solving complex backend problems, I am always eager to contribute and make an impact.
+</p>
+
+<script>
+  const textParagraph = document.getElementById("typedParagraph").textContent;
+  const paragraphElement = document.getElementById("typedParagraph");
+  let paragraphIndex = 0;
+
+  function typeParagraphChar() {
+    if (paragraphIndex < textParagraph.length) {
+      paragraphElement.textContent = textParagraph.substring(0, paragraphIndex + 1);
+      paragraphIndex++;
+      setTimeout(typeParagraphChar, 50); // Adjust typing speed here (milliseconds)
+    }
+  }
+
+  typeParagraphChar();
+</script>
   
   </div>
   
@@ -580,7 +596,7 @@
   </div>
 </section>
 
-  <section id="projects">
+  <section id="Projects">
     <h2 style="color: #00008B; font-size: 36px; font-weight: 700; text-align: center;">Projects</h2>
 
       <div class="projects-container" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; max-width: 1200px; margin: 0 auto; padding: 20px;">
@@ -677,7 +693,7 @@
       </div>
   </section>
 
-  <section id="contact" style="background-color: #fdf9c4; padding: 80px 20px; box-sizing: border-box;">
+  <section id="Contact" style="background-color: #fdf9c4; padding: 80px 20px; box-sizing: border-box;">
     <div class="contact-container" style="background-color: #fdf9c4; padding: 40px; border-radius: 12px; box-shadow: 0 6px 16px rgba(0,0,0,0.1); max-width: 600px; margin: 0 auto; text-align: left;">
       <h2 style="text-align: center; font-size: 28px; margin-bottom: 25px; color: #00008B; font-family: 'Poppins', sans-serif;">
         Let's Connect
