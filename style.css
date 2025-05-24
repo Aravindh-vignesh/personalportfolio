@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
  body {
-      cursor: url('assets/Screenshot_2025-05-22_121144-removebg-preview.png'), auto;
+      cursor: url('./assets/Screenshot_2025-05-22_121144-removebg-preview.png'), auto;
     }
 body {
     margin: 0;
