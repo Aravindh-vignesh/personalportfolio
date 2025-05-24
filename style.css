@@ -1,9 +1,9 @@
 * {
     box-sizing: border-box;
 }
-body{
-    cursor: url(/assets/Screenshot_2025-05-22_121144-removebg-preview\ \(1\).png) , auto ;
-}
+ body {
+      cursor: url('assets/Screenshot_2025-05-22_121144-removebg-preview.png'), auto;
+    }
 body {
     margin: 0;
     padding: 0;
